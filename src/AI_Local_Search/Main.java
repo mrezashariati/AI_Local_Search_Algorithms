@@ -37,6 +37,7 @@ public class Main {
         }
         System.out.println("Min value: " + min + "\nReal min value: " + realMin);
         searchFunc.printChart();
+        chartArray(A);
     }
 
     static void fillArray(double[] A) {
@@ -51,5 +52,13 @@ public class Main {
         int c = 12345;
         double m = Math.pow(2, 31);
         return ((a * lastElement) + c) % m;
+    }
+
+    static void chartArray(double[] A){
+        Chart chart = new Chart();
+        for (int i = 0; i < A.length; i++) {
+            chart.addData(i, A[i]);
+        }
+        chart.setVisible(true);
     }
 }

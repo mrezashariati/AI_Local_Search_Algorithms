@@ -11,9 +11,5 @@ public class Genetic extends LocalSearch  {
         return 0;
     }
 
-    @Override
-    Integer getNeighbours(int state, byte direction) {
-        return null;
-    }
 
 }

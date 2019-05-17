@@ -14,8 +14,8 @@ public abstract class LocalSearch {
     abstract public double getMin();
 
     public void printChart() {
-        chart.setVisible(true);
+        this.chart.setVisible(true);
     }
 
-    abstract Integer getNeighbours(int state, byte direction);
+
 }
